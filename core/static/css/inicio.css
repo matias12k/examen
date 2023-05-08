@@ -1,45 +1,114 @@
 /* Estilos para la barra de navegación */
 .navbar {
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 30px;
-  }
-  .navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .nav-link {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    text-transform: uppercase;
-    margin-left: 20px;
-  }
-  
-  /* Estilos para los botones */
-  .btn-registrarme {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-  .btn-iniciar-sesion {
-    background-color: #2196F3;
-    border: none;
-    color: white;
-    padding: 10px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+.nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+/* Estilos para los botones */
+.btn-registrarme,
+.btn-iniciar-sesion {
+  background-color: #2196F3;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-registrarme:hover {
+  background-color: #4CAF50;
+}
+
+.btn-iniciar-sesion:hover {
+  background-color: #1E88E5;
+}
+
+.title-and-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title-and-buttons h1 {
+  margin-bottom: 0.5em;
+  font-size: 3rem;
+  color: #333;
+}
+
+/* Estilos para el encabezado */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Estilos para los botones */
+header button {
+  background-color: #2196F3;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+
+header button:hover {
+  background-color: #1E88E5;
+}
+
+/* Estilos para el contenido principal */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+main h1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+/* Estilos para los enlaces */
+a {
+  color: #333;
+}
+
+a:hover {
+  color: #555;
+}
