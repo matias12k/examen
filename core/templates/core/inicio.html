@@ -24,6 +24,16 @@
       <!-- aquí irían los juegos y otras secciones de la página -->
       
       
+      <tr>
+        <td>Nombre</td>
+        <td>Apellido</td>
+        <td>EMail</td>
+        <td>Telefono</td>
+        <td>Password</td>
+        <td></td>  
+       {% endfor %}
+      </tr>
+      
       {% for f in formulario %} 
       <tr>
         <td>{{f.nombre}}</td>
