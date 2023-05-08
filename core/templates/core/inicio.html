@@ -22,6 +22,36 @@
     </header>
     <main>
       <!-- aquí irían los juegos y otras secciones de la página -->
+      
+      
+      <tr>
+        <td>Nombre</td>
+        <td>Apellido</td>
+        <td>EMail</td>
+        <td>Telefono</td>
+        <td>Password</td>
+        <td></td>  
+       {% endfor %}
+      </tr>
+      
+      {% for f in formulario %} 
+      <tr>
+        <td>{{f.nombre}}</td>
+        <td>{{f.apellido}}</td>
+        <td>{{f.email}}</td>
+        <td>{{f.telefono}}</td>
+        <td>{{f.password}}</td>
+        <td></td>  
+       {% endfor %}
+      </tr>
+       nombre = models.CharField(max_length=50)
+    apellido = models.CharField(max_length=50)
+    email = models.EmailField()
+    telefono = models.CharField(max_length=20, blank=True)
+    password
+      
+      
+      
     </main>
   </body>
 </html>
