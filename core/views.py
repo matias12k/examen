@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import formulario
 from django.contrib import messages
-from django.contrib.auth import authenticate, login
+
 #Create your views here.
 def inicio(request):
     #return render(request, 'core/inicio.html')
@@ -47,24 +47,3 @@ def confirmacion(request):
     return render(request, 'core/inicio.html')
 
 
-from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login
-from django.contrib import messages
-
-def login_view(request):
-    if request.method == 'POST':
-        email = request.POST['email']
-        password = request.POST['password']
-        
-        # Autenticar al usuario
-        user = authenticate(request, email=email, password=password)
-        
-        if user is not None:
-            # Iniciar sesión del usuario
-            login(request, user)
-            messages.success(request, '¡Inicio de sesión exitoso!')
-            return redirect('pagina_juegos') # Redirigir a la página de inicio
-        else:
-            messages.error(request, 'Correo electrónico o contraseña incorrectos.')
-    
-    return render(request, 'core/inicio_sesion.html')
