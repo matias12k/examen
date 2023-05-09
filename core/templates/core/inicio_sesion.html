@@ -12,8 +12,9 @@
 <body>
 	
 	<div class="buttons">
-		<button class="btn-registrarme">Registrarme</button>
-		<button class="iniciar_sesion">Iniciar Sesión</button>
+		<a href="{% url 'inicio' %}" class="btn-inicio">Iniciar Sesión</a>
+		<a href="{% url 'registro' %}" class="btn-registrarme">Registrarse</a>
+		
 	</div>
 	<form action="#" method="post">
 		<label for="email">Correo Electrónico:</label>
