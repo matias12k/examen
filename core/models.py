@@ -1,6 +1,6 @@
 from django.db import models
 
-class Formulario(models.Model):
+class formulario(models.Model):
     nombre = models.CharField(max_length=50)
     apellido = models.CharField(max_length=50)
     email = models.EmailField()
