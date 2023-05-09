@@ -61,3 +61,6 @@ def show_time(request):
 
 def hora(request):
     return render(request, 'core/time.html')
+
+def matias(request):
+    return render(request, 'core/matias.html')
