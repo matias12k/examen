@@ -1,0 +1,347 @@
+
+/*tamaño general*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+/* manejar tamaño de imagenes */
+.card-img-top {
+	height: 200px;
+	object-fit: cover;
+}
+
+.card-text {
+	height: 80px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+header {
+	background-color: #333;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+header h1 {
+	margin: 0
+}
+
+header p {
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+header a {
+	display: inline-block;
+	margin: 10px;
+	padding: 10px 20px;
+	border: 2px solid white;
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+header a:hover {
+	background-color: white;
+	color: #333;
+}
+
+section {
+	background-color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+section h2 {
+	margin: 0;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+form {
+	background-color: white;
+	padding: 20px;
+	margin: 50px auto;
+	max-width: 500px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+
+form input {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+	font-size: 16px;
+}
+
+form button[type="submit"], form button[type="reset"] {
+	display: inline-block;
+	padding: 10px 20px;
+	margin-right: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #333;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+form button[type="submit"]:hover, form button[type="reset"]:hover {
+	background-color: #555;
+}
+
+
+/*tamaño para celular*/
+@media only screen and (max-width: 480px) {
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: Arial, sans-serif;
+		background-color: #f2f2f2;
+	}
+	
+	/* manejar tamaño de imagenes */
+	.card-img-top {
+		height: 200px;
+		object-fit: cover;
+	}
+	
+	.card-text {
+		height: 80px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	
+	header {
+		background-color: #333;
+		color: white;
+		padding: 20px;
+		text-align: center;
+	}
+	
+	header h1 {
+		margin: 0
+	}
+	
+	header p {
+		margin-top: 10px;
+		font-size: 18px;
+	}
+	
+	header a {
+		display: inline-block;
+		margin: 10px;
+		padding: 10px 20px;
+		border: 2px solid white;
+		border-radius: 5px;
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	
+	header a:hover {
+		background-color: white;
+		color: #333;
+	}
+	
+	section {
+		background-color: white;
+		padding: 20px;
+		text-align: center;
+	}
+	
+	section h2 {
+		margin: 0;
+	}
+	
+	
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: Arial, sans-serif;
+		background-color: #f2f2f2;
+	}
+	
+	form {
+		background-color: white;
+		padding: 20px;
+		margin: 50px auto;
+		max-width: 500px;
+		border-radius: 5px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	}
+	
+	form label {
+		display: block;
+		margin-bottom: 5px;
+		font-size: 18px;
+	}
+	
+	form input {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 20px;
+		border: none;
+		border-radius: 5px;
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+		font-size: 16px;
+	}
+	
+	form button[type="submit"], form button[type="reset"] {
+		display: inline-block;
+		padding: 10px 20px;
+		margin-right: 10px;
+		border: none;
+		border-radius: 5px;
+		background-color: #333;
+		color: white;
+		font-size: 16px;
+		cursor: pointer;
+	}
+	
+	form button[type="submit"]:hover, form button[type="reset"]:hover {
+		background-color: #555;
+	}
+	}
+	
+	
+/*tamaño para tablet*/
+
+@media only screen and (max-width: 600px) {
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: Arial, sans-serif;
+		background-color: #f2f2f2;
+	}
+	
+	/* manejar tamaño de imagenes */
+	.card-img-top {
+		height: 200px;
+		object-fit: cover;
+	}
+	
+	.card-text {
+		height: 80px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	
+	header {
+		background-color: #333;
+		color: white;
+		padding: 20px;
+		text-align: center;
+	}
+	
+	header h1 {
+		margin: 0
+	}
+	
+	header p {
+		margin-top: 10px;
+		font-size: 18px;
+	}
+	
+	header a {
+		display: inline-block;
+		margin: 10px;
+		padding: 10px 20px;
+		border: 2px solid white;
+		border-radius: 5px;
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	
+	header a:hover {
+		background-color: white;
+		color: #333;
+	}
+	
+	section {
+		background-color: white;
+		padding: 20px;
+		text-align: center;
+	}
+	
+	section h2 {
+		margin: 0;
+	}
+	
+	
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: Arial, sans-serif;
+		background-color: #f2f2f2;
+	}
+	
+	form {
+		background-color: white;
+		padding: 20px;
+		margin: 50px auto;
+		max-width: 500px;
+		border-radius: 5px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	}
+	
+	form label {
+		display: block;
+		margin-bottom: 5px;
+		font-size: 18px;
+	}
+	
+	form input {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 20px;
+		border: none;
+		border-radius: 5px;
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+		font-size: 16px;
+	}
+	
+	form button[type="submit"], form button[type="reset"] {
+		display: inline-block;
+		padding: 10px 20px;
+		margin-right: 10px;
+		border: none;
+		border-radius: 5px;
+		background-color: #333;
+		color: white;
+		font-size: 16px;
+		cursor: pointer;
+	}
+	
+	form button[type="submit"]:hover, form button[type="reset"]:hover {
+		background-color: #555;
+	}
+	}
