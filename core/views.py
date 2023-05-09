@@ -64,4 +64,4 @@ def login_view(request):
         else:
             messages.error(request, 'Correo electrónico o contraseña incorrectos.')
     
-    return render(request, 'login.html')
+    return render(request, 'core/E1_matias_barraza_S2.html')
