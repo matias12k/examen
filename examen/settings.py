@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
-    'rest_api',
 ]
 
 MIDDLEWARE = [
@@ -80,9 +79,9 @@ DATABASES = {
       #  'ENGINE': 'django.db.backends.sqlite3',
        # 'NAME': BASE_DIR / 'db.sqlite3',
        'ENGINE': 'django.db.backends.oracle',
-       'NAME': '192.168.1.157/XE',
+       'NAME': 'localhost/orcl',
        'USER': 'DUOC2023',
-       'PASSWORD': '12345',
+       'PASSWORD': 'admin123',
        'TEST':{
            'USER':'default_test',
            'TBLSPACE':'default_test_tbl',

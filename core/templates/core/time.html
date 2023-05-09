@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tienda de videojuegos</title>
+    <link rel="stylesheet" href="{% static 'css/inicio.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="title-and-buttons">
+        <h1>Tienda de videojuegos</h1>
+        <div class="buttons">
+          <a href="{% url 'registro' %}" class="btn-registrarme">Registrarse</a>
+          <a href="{% url 'iniciarsesion' %}" class="btn-iniciar-sesion">Iniciar Sesion</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- aquí irían los juegos y otras secciones de la página -->
+      <h3>La hora actual en Santiago de Chile es: {{ current_time }}</h3>
+    </main>
+  </body>
+</html>
+
+    
+
