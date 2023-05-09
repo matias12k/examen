@@ -13,7 +13,10 @@ def registro(request):
     return render(request, 'core/registrarse.html')
 
 #def inicio2(request):
-    
+
+def inicio_sesion(request):
+    return render(request, 'core/inicio_sesion.html')
+
 def registrarse(request):
     if request.method == 'POST':
         # Si el formulario ha sido enviado
