@@ -79,9 +79,9 @@ DATABASES = {
       #  'ENGINE': 'django.db.backends.sqlite3',
        # 'NAME': BASE_DIR / 'db.sqlite3',
        'ENGINE': 'django.db.backends.oracle',
-       'NAME': 'localhost/ORCL',
+       'NAME': '192.168.1.157/XE',
        'USER': 'DUOC2023',
-       'PASSWORD': 'admin123',
+       'PASSWORD': '12345',
        'TEST':{
            'USER':'default_test',
            'TBLSPACE':'default_test_tbl',
