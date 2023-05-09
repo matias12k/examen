@@ -1,9 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import formulario
 from django.contrib import messages
-import requests
-from django.shortcuts import render
-
 
 #Create your views here.
 def inicio(request):
@@ -13,11 +10,17 @@ def inicio(request):
     
     return render(request, 'core/inicio.html', contexto)
 
+def pagina_juegos(request):
+    return render(request, 'core/E1_matias_barraza_S2.html')
+
 def registro(request):
     return render(request, 'core/registrarse.html')
 
 #def inicio2(request):
-    
+
+def inicio_sesion(request):
+    return render(request, 'core/inicio_sesion.html')
+
 def registrarse(request):
     if request.method == 'POST':
         # Si el formulario ha sido enviado
@@ -43,21 +46,4 @@ from django.shortcuts import render
 def confirmacion(request):
     return render(request, 'core/inicio.html')
 
-def iniciarsesion(request):
-    return render(request, 'core/inicio_sesion.html')
 
-
-#api externa con la hora
-def get_current_time():
-    url = 'http://worldtimeapi.org/api/timezone/America/Santiago'
-    response = requests.get(url)
-    data = response.json()
-    current_time = data['datetime']
-    return current_time
-
-def show_time(request):
-    current_time = get_current_time()
-    return render(request,'core/time.html',{'current_time': current_time})
-
-def hora(request):
-    return render(request, 'core/time.html')

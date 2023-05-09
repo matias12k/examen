@@ -39,7 +39,7 @@
 }
 
 .btn-iniciar-sesion:hover {
-  background-color: #4CAF50;
+  background-color: #1E88E5;
 }
 
 .title-and-buttons {
@@ -62,7 +62,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #4fcfe0;
+  background-color: #333;
   color: white;
 }
 
@@ -110,5 +110,5 @@ a {
 }
 
 a:hover {
-  color: #44c7df;
+  color: #555;
 }

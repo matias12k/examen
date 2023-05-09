@@ -8,7 +8,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.hashers import check_password
 from rest_framework.authtoken.models import Token
 
-from core.models import formulario
+from .models import Formulario
 
 @api_view(['POST'])
 def login(request):
@@ -18,8 +18,8 @@ def login(request):
     password = data['password']
 
     try:
-        formulario = formulario.objects.get(email=email)
-    except formulario.DoesNotExist:
+        formulario = Formulario.objects.get(email=email)
+    except Formulario.DoesNotExist:
         return Response("Correo electrónico o contraseña incorrectos.", status=status.HTTP_401_UNAUTHORIZED)
 
     # validar la contraseña
