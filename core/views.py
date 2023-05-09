@@ -10,6 +10,9 @@ def inicio(request):
     
     return render(request, 'core/inicio.html', contexto)
 
+def pagina_juegos(request):
+    return render(request, 'core/E1_matias_barraza_S2.html')
+
 def registro(request):
     return render(request, 'core/registrarse.html')
 
@@ -60,8 +63,8 @@ def login_view(request):
             # Iniciar sesión del usuario
             login(request, user)
             messages.success(request, '¡Inicio de sesión exitoso!')
-            return redirect('inicio') # Redirigir a la página de inicio
+            return redirect('pagina_juegos') # Redirigir a la página de inicio
         else:
             messages.error(request, 'Correo electrónico o contraseña incorrectos.')
     
-    return render(request, 'core/E1_matias_barraza_S2.html')
+    return render(request, 'core/inicio_sesion.html')
