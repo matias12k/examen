@@ -7,13 +7,29 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
   <body>
-    <h1>Formulario de registro</h1>
-    <div class="botones text-center">
-      <a href="{% url 'inicio' %}" class="btn-inicio">Iniciar Sesión</a>
-      <a href="{% url 'inicio_sesion' %}" class="btn-iniciar-sesion">Iniciar Sesión</a>
+      <tr>
+        <td> <div class="row">
+          <div class=" col-md-2"></div>
+          <div class=" col-md-8">
+              {% if messages %}
+          </div>
+              {% for i in messages %}
+                <p style="background-color: #d2ffcc; padding: 10px;">{{ i }}</p>
+              {% endfor %}
       </div>
+              {% endif %}
+    
+        <h1>Formulario de registro</h1>
+        <header>
+    <div class="botones text-center">
+        <a href="{% url 'inicio' %}" class="btn btn-primary">Inicio</a>
+        <a href="{% url 'iniciarsesion' %}" class="btn btn-primary">Iniciar sesión</a>
+        <a href="{% url 'hora' %}" class="btn btn-primary">Hora de Santiago</a>
+      </div>
+        </header>
       <form action="{% url 'registrarse' %}" method="POST">
         {% csrf_token %}
         <label for="nombre">Nombre:</label>
@@ -29,7 +45,7 @@
         <label for="confirm-password">Confirmar contraseña:</label>
         <input type="password" id="confirm-password" name="confirm-password" required><br>
         <input type="submit" value="Registrarse">
-        <button type="button" onclick="limpiarFormulario()">Limpiar formulario</button>
+       <!-- <button type="button" onclick="limpiarFormulario()">Limpiar formulario</button>-->
       </form>
     <script>
       function limpiarFormulario() {

@@ -1,5 +1,6 @@
 from django.urls import path, include
 from . import views
+from .views import show_time
 
 
 urlpatterns = [
@@ -10,7 +11,6 @@ urlpatterns = [
     path('inicio_sesion', views.inicio_sesion, name ='inicio_sesion'),
     path('login', views.pagina_juegos, name='login'),
     path('juegos', views.pagina_juegos, name='juegos'),
-    path('api/', include('rest_api.urls')),
     #path('inicio2', views.inicio, name='inicio2'),
     # otras rutas de URL aquí
 ]
